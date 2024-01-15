@@ -1,0 +1,517 @@
+/* General presets */
+@import url("https://fonts.googleapis.com/css2?family=Reenie+Beanie&family=Roboto:wght@100;300;400;500;700;900&display=swap");
+* {
+    font-family: "Roboto", "sans-serif";
+}
+body{
+  background-color: #FCEBD5;
+  margin: 0;
+}
+section {
+  display: none;
+}
+.h1, .h3{
+  font-family:  'Reenie Beanie';
+  margin: 0;
+}
+.navBar {
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+    height: 12vh;
+    padding: 40px;
+}
+.logo {
+  /* width: 120px;
+  height: 120px; */
+  cursor: pointer;
+}
+
+.titleBrown {
+  color: #A16A5E;
+}
+.unclearWhite {
+color: #FCEBD5;;
+}
+.unclearWhiteBg {
+background-color: #FCEBD5;
+}
+.bgRedish {
+background-color: #D44C2E;
+}
+.bg-brownish {
+background-color: #A16A5E;
+}
+.backgroundPink {
+  background-color: #E09686;
+}
+.titleChampagne {
+  color: #EDD5BB;
+}
+.bg-Champagne {
+  background-color: #EDD5BB;
+}
+.navFixed {
+  position: fixed;
+ top: 0;
+ left: 0;
+ right: 0;
+ z-index: 11;
+ background-color: #FCEBD5;
+}
+
+/* landing page */
+.boxshadow {
+  filter: drop-shadow(10px 0px 5px rgba(0, 0, 0, 0.3))
+}
+.artistCard {
+  background-color: #EDD5BB;
+  clip-path:polygon(0 0, 100% 0%, 100% 100%, 0 42%);
+  position: relative;
+  
+
+}
+.visitorCard {
+  clip-path:polygon(0 0, 100% 58%, 100% 100%, 0 100%);
+  background-color: #A16A5E;
+  top: -174px;
+}
+.artistCard, .visitorCard {
+  width: 350px;
+  height: 300px;
+  transition: transform .2s;
+  cursor: pointer;
+}
+.cardInnerArtist span, .cardInnerArtist select , .visitorCard, .cardInnerVisitor{
+  position: absolute;
+}   
+
+.cardInnerVisitor{
+  top: 75%;
+  left: 40%;
+  transform: translate(-40%,-75%);
+}
+.cardInnerArtist span{
+  top: 30%;
+  left: 40%;
+  transform: translate(-40%,-30%);
+}
+.cardInnerArtist select{
+  top: 45%;
+  left: 80%;
+  transform: translate(-45%,-80%);
+}
+.visitorCard:hover, .artistCard:hover {
+  transform: scale(1.1);
+}
+#selectArtist {
+  width: 100px;
+  height: 30px;
+  background: none;
+  border-radius: 10px;
+  border: 1px solid #A16A5E;
+
+font-weight: 300;
+font-size: 20px;
+outline: none;
+cursor: pointer;
+}
+
+/* Visitor homepage */
+
+/* Visitor homepage  nav*/
+.wrapperLogoTitle  {
+  margin-top: 30px;
+  z-index: 1;
+}
+/* .bars-button {
+  margin-top: 35px;
+} */
+.hammer, .hamburger {
+  margin-top: 15px;
+  cursor: pointer;
+}
+/* Visitor homepage bricks section */
+.bricks-background {
+  position: relative;
+  height: 20vh;
+} 
+.bricks-row1, .bricks-row3,.bricks-row2, .bricks-row5,.bricks-row8{
+  width: calc(100% - 15px);
+}
+.bricks-row2,.bricks-row4,.bricks-row6,.bricks-row8{
+  align-self: flex-end;
+}
+.bricks-row4, .bricks-row6 {
+  width: calc(100% - 15px);
+}
+.bricks-row7{
+  width: calc(100% - 100px);
+  align-self: center;
+}
+.text-bricks {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.find-now-btn {
+  border: none;
+  outline: none;
+  border-radius: 2px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  padding: 6px 17px;
+  height: fit-content;
+  cursor: pointer;
+  }
+  .find-now-btn:hover {
+    text-decoration: none;
+    color: #EDD5BB;
+}
+
+/* Visitor homepage  slider Section*/
+.bricks-background .row {
+  background-image: url("../img/brick.svg");
+  background-repeat: repeat-x;
+  height: 20px;
+
+}
+
+.slideWrapper {
+  width: max-content;
+  overflow: hidden;
+}
+
+.slider {
+  display: flex;
+  flex-wrap: wrap;
+  transition: transform 0.3s ease;
+  flex-direction: row;
+}
+
+.slider .pictureSlide {
+  height: 20vh;
+  width: 30vh;
+  perspective: 100px;
+  object-fit: cover;
+  margin: 5px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.slider .pictureSlide img {
+  height: 90%;
+  width: 90%;
+  transition: transform 0.3s ease;
+  filter: drop-shadow(-5px -5px 5px rgba(0, 0, 0, 0.3));
+}
+
+.slider .pictureSlide img:hover {
+  transform: scale(1.3);
+  
+}
+
+.slideOne {
+  animation: slideLeft 50s linear infinite;
+  margin-bottom: 50px;
+}
+
+.slideTwo {
+  animation: slideRight 50s linear infinite;
+}
+
+.slideOne:hover,
+.slideTwo:hover {
+  animation-play-state: paused;
+}
+
+@keyframes slideLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-330vh);
+  }
+}
+
+@keyframes slideRight {
+  0% {
+    transform: translateX(-330vh);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* Visitor homepage  carousel Section*/
+.border-Costume {
+  border-right: 2px solid #A16A5E;
+  height: 150%;
+}
+.cardText span, .descText {
+  transition:  opacity 0.5s ease-in-out;
+}
+.carousel_button {
+  background-color: transparent;  
+}
+.carousel_button svg:hover path {
+  stroke: #E09686;
+}
+.carousel_button--left {
+  left: 19px;
+  padding-right: 10px;
+}
+.carousel_button--right {
+  right: 19px;
+  padding-left: 10px;
+}
+button {
+  border: none;
+  outline: none;
+  border-radius: 2px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  cursor: pointer;
+}
+.carouselImg {
+  position: absolute;
+  top: -30%;
+  left: 50%;
+  transform: translate(-55%,-50%);
+  width: 65px;
+  height: 65px;
+}
+.costume-container {
+  padding-top: 80px;
+  padding-bottom: 20px;
+}
+/* Visitor/listing PAGE*/
+#byType, #filterArtist, #maxInput, #minInput, #titleInput, #newItemInput, #descriptionNewItemInput, #typeNewItemInput, #priceNewItemInput, #imageUrl, #yourBiding{
+  width: 100px;
+  height: 30px;
+  background: none;
+  border-radius: 10px;
+  border: 1px solid #EDD5BB;
+color: #EDD5BB;
+font-weight: 300;
+font-size: 20px;
+outline: none;
+cursor: pointer;
+}
+#yourBiding {
+  width: 100%;
+}
+
+/* Artist HOMEPAGE*/
+/* Artist HOMEPAGE ITEMS AND AUCTION NAV*/
+.line {
+  width: 50px;
+  height: 8px;
+  margin: 5px;
+  background-color: #A16A5E;
+}
+.nav-wrapper {
+background-color: #FCEBD5;
+position: relative;
+top: 0;
+display: flex;
+align-items: center;
+justify-content: space-between;
+z-index: 111;
+}
+.bars-button {
+  padding: 0;
+  background-color: transparent;
+}
+.dropdown-nav {
+  position: absolute;
+  width: 100%;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: #A16A5E;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  transform: translateY(-105%);
+  transition: transform 150ms ease-in-out;
+  z-index: 10;
+}
+.dropdown-nav .nav-link {
+  margin: 0 auto;
+  width: fit-content;
+  font-size: 32px;
+  font-weight: 200;
+  line-height: 50px;
+  text-decoration: none;
+  color: #FCEBD5;
+  transition: font 150ms ease-in-out;
+}
+.dropdown-nav .nav-link:hover {
+  font-size: 35px;
+  font-weight: 400;
+}
+.dropdown-nav.active {
+  transform: translateY(0%);
+}
+
+.ChartBtnfilters button {
+  padding: 20px;
+  width: 100%;
+  display: block;
+}
+.costume-CardChart {
+  display: none;
+}
+/* Artist/LISTING*/
+
+.filterMenu, .insertNewItem {
+  position: fixed;
+  top: 80.04px;
+  right: -100%  ;
+  width: 100%;
+  height: calc(100% - 80.04px);
+  transition: right 0.3s ease;
+  z-index: 1;
+  overflow-y: auto;
+}
+
+.closeFilterBtn {
+position: absolute;
+top: 20px;
+right: 10px;
+font-size: 40px;
+cursor: pointer;
+background-color: transparent;
+}
+.submitBtn {
+  position: absolute;
+  right:25px;
+  bottom: 0;
+  cursor: pointer;
+  
+}
+.addNewItem {
+border: 3px solid #A16A5E;
+border-style: dotted;
+cursor: pointer;
+}
+.uploadImg {
+border: 3px solid #FCEBD5;
+border-style: dotted;
+cursor: pointer;
+}
+.popup {
+display: none;
+position: fixed;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+padding: 20px;
+background-color: white;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+z-index: 1;
+}
+
+
+@media only screen and (max-width: 425px) {
+  .find-now-btn {
+    width: 120px;
+  }
+  .border-Costume {
+  border-right: 2px solid #A16A5E;
+  height: 80%;
+}
+.carouselImg {
+  top: -10%;
+  left: 50%;
+}
+ .logo {
+  width: 100px;
+  height: 100px;
+ }
+ .artistCard .h1, .visitorCard .h1 {
+  font-size: 35px;
+ }
+ .h1, .hammer, .h2, .hamburger {
+  font-size: 25px;
+ }
+ .flex-costume .h2 {
+font-size: 15px;
+ }
+ .flex-costume button {
+  font-size: 10px;
+ }
+ .submitBtn {
+  display: block;
+  width: 40px;
+  bottom: -33px;
+ }
+ .ChartBtnfilters button {
+  padding: 10px;
+  width: 100%;
+  display: block;
+}
+.navBar {
+  padding: 5px;
+}
+.line {
+  width: 30px;
+  height: 5px;
+}
+.filterMenu, .insertNewItem {
+  
+  top: 73.68px;
+  height: calc(100% - 73.68px);
+  
+  
+}
+}
+
+/* h1 {
+  font-weight: normal;
+  letter-spacing: .125rem;
+  text-transform: uppercase;
+} */
+
+li {
+  display: inline-block;
+  font-size: 1.5em;
+  list-style-type: none;
+  padding: 1em;
+  text-transform: uppercase;
+}
+
+li span {
+  display: block;
+  font-size: 4.5rem;
+}
+
+.emoji {
+  display: none;
+  padding: 1rem;
+}
+
+.emoji span {
+  font-size: 4rem;
+  padding: 0 .5rem;
+}
+
+@media all and (max-width: 768px) {
+  h1 {
+    font-size: calc(1.5rem * var(--smaller));
+  }
+  
+  li {
+    font-size: calc(1.125rem * var(--smaller));
+  }
+  
+  li span {
+    font-size: calc(3.375rem * var(--smaller));
+  }
+}
