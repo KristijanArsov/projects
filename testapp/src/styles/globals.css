@@ -1,0 +1,98 @@
+* {
+  font-family: Courier;
+  color:#fff
+}
+
+.background {
+    background: url('/images/lofi.gif');
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  h1 {
+    color: #ffffff9d;  
+    background: transparent;
+  }
+ 
+.fixedCostume {
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
+}
+
+.header {
+  transition: background-color 0.6s ease !important;
+}
+
+.scrolled {
+  background-color: #00000091 !important; 
+  backdrop-filter: blur(3px) !important;
+  min-height: 100vh;
+}
+
+p h2 li {
+  color: #e6e6fa;
+}
+.costumeContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 500px;
+  gap: 10px;
+}
+
+.costumeContainer > div {
+  flex: 0 0 120px;
+  border-radius: 0.5rem;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+  box-shadow: 1px 5px 15px #1d0d3c;
+  position: relative;
+  overflow: hidden;
+}
+.costumeContainer > div:nth-of-type(1) {
+  background: url("https://w0.peakpx.com/wallpaper/21/687/HD-wallpaper-cultural-lofi-vida.jpg") no-repeat 50%/cover;
+}
+.costumeContainer > div:nth-of-type(2) {
+  background: url("https://i.pinimg.com/originals/a4/b3/70/a4b370d25607eed5c2e3a2fe4cc361b0.gif") no-repeat 50%/cover;
+}
+.costumeContainer > div:nth-of-type(3) {
+  background: url("https://www.icegif.com/wp-content/uploads/2021/09/icegif-5.gif") no-repeat 50%/cover;
+}
+.costumeContainer > div:nth-of-type(4) {
+  background: url("https://i.pinimg.com/originals/3a/9d/48/3a9d48625a6af12282cf500ef86c5b62.gif") no-repeat 100%/cover;
+}
+.costumeContainer > div .content {
+  font-size: 1.5rem;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  opacity: 0;
+  flex-direction: column;
+  height: 100%;
+  justify-content: flex-end;
+  background: #02022e;
+  background: linear-gradient(0deg, rgba(2, 2, 46, 0.6755077031) 0%, rgba(255, 255, 255, 0) 100%);
+  transform: translatey(100%);
+  transition: opacity 0.5s ease-in-out, transform 0.5s 0.2s;
+  visibility: hidden;
+}
+.costumeContainer > div .content span {
+  display: block;
+  margin-top: 5px;
+  font-size: 1.2rem;
+}
+.costumeContainer > div:hover {
+  flex: 0 0 250px;
+  box-shadow: 1px 3px 15px #6c4cae;
+  transform: translatey(-30px);
+}
+.costumeContainer > div:hover .content {
+  opacity: 1;
+  transform: translatey(0%);
+  visibility: visible;
+}

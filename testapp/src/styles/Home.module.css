@@ -1,0 +1,43 @@
+.costumeInput {
+border-radius: 5px;
+border: 1px solid #0d31e235;
+background: #0d31e235;
+}
+
+.costumeInput::placeholder, .inputSearch::placeholder {
+    color: #ffffff9d;
+    padding-left: 10px;
+}
+
+.costumeBtn {
+border: 1px solid #0d31e235;
+border-radius: 5px;
+background: #0d31e235;
+color: #ffffff9d;
+}
+.costumeBtn:hover{
+    color: #ffffff9d;
+}
+.borderForm {
+    border: 1px solid #0d31e235;
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+    background: transparent;
+    backdrop-filter: blur(3px);
+    box-shadow: 0 0 0.5em #0d31e292;
+
+}
+
+.weatherTable {
+    box-shadow: 0 0 0.5em #1d0d3c;
+    background: transparent;
+    border-radius: 10px;
+}
+.inputSearch {
+    box-shadow: 0 0 0.5em #1d0d3c;
+    background: transparent;
+    border-radius: 10px;
+    border: none;
+}
+
