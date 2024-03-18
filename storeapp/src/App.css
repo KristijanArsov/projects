@@ -1,0 +1,100 @@
+.banner-bg-img {
+  background: url("../public/images/slide-03.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100svh;
+  width: 100%;
+}
+
+.custom-absolute-banner {
+  top: 40%;
+  left: 10%;
+}
+
+.custom-btn:hover {
+  background-color: #35374b;
+  color: #fff !important;
+}
+
+.gender-link-female {
+  background: url("../public/images/banner-04.jpg");
+}
+.gender-link-male {
+  background: url("../public/images/banner-05.jpg");
+}
+.gender-link-similarities {
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 500px;
+}
+.gender-link-similarities a {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  text-align: center;
+  background-color: #35374b;
+  text-orientation: sideways;
+  height: 500px;
+  font-size: 100px;
+  text-decoration: none;
+  color: #fff;
+  opacity: 0.4;
+}
+
+.custom-search-form {
+  position: fixed;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  z-index: 1111;
+  background-color: #7f84be44;
+  left: 0;
+  right: 0;
+}
+
+.custom-search-form input {
+  height: 60px;
+}
+
+.custom-display-x {
+  position: fixed;
+  right: 100px;
+  top: 100px;
+  z-index: 11111;
+}
+
+.breadcrumbs-bg {
+  background: url("../public/images/bg-01.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 300px;
+}
+
+.card-custom {
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+input:focus{
+  outline: none;
+}
+
+.scrollmenu {
+  overflow: auto;
+  white-space: nowrap;
+}
+
+@media only screen and (max-width: 600px) {
+  .custom-col {
+    flex-direction: column;
+  }
+  .custom-display-x {
+    top: 41%;
+    right: 20px;
+  }
+}
