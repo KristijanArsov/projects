@@ -1,0 +1,9 @@
+body {
+  background: rgb(12, 26, 42);
+  height: 100svh;
+  margin: 0;
+font-family:sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
